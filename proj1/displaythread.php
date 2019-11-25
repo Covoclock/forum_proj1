@@ -1,10 +1,14 @@
 <?php
   session_start();
-  
+  include "./UTILS/cookiemanager.php";
+
   if(!isset($_GET["threadTitle"])){
     header("Location: error.php?ErrorMSG=Bad%20Request!");
     die();
   }
+
+  //manage favorite thread cookies
+  manage_fav_cookies();
 
   $title=$_GET["threadTitle"];
 

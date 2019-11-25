@@ -14,7 +14,10 @@
             <?php include "threadlistview.php"; ?>
         </div>
         <div class="col-sm-4 mb-4">
-            <?php include "threadcreationview.php"; ?>
+            <?php 
+              include "threadcreationview.php"; 
+              include "favoriteview.php";  
+            ?>
         </div>
     </div>
 </div>

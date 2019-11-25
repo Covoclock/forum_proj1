@@ -1,18 +1,10 @@
 <?php
-    include "classes/user/user.php";
-
+    include "./UTILS/cookiemanager.php";
     session_start();
 
-    $testUser = new User();
-    $testUserTDG = new UserTDG();
+    manage_fav_cookies();
+    sort_fav_cookies();
 
-    $test = $testUserTDG->get_all_users();
-
-    echo "$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-
-    var_dump($test);
-
-    var_dump($_SESSION);
-
+    var_dump($_COOKIE);
 
 ?>

@@ -1,6 +1,7 @@
 <?php
     session_start();
     include "UTILS/sessionhandler.php";
+    include "UTILS/cookiemanager.php";
 
     $title = "billboard";
 
